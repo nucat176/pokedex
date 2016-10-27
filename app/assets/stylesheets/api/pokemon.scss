@@ -1,0 +1,39 @@
+// Place all the styles related to the api/Pokemon controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.poke-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.poke-list li {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.poke-list li:hover {
+  background-color: #9c2a0f;
+}
+
+.show {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 2px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .9);
+  color: white;
+}
+
+.attribute {
+  text-align: center;
+}
