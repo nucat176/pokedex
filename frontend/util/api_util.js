@@ -13,3 +13,12 @@ export const fetchPokemon = (id, success) => {
     success
   });
 };
+
+export const createPokemon = (pokeParams, success) => {
+  $.ajax({
+    type: 'POST',
+    url: '/api/pokemon',
+    data: pokeParams,
+    success
+  });
+};

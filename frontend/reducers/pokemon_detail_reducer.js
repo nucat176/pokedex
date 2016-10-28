@@ -1,6 +1,8 @@
 import {REQUEST_POKEMON, RECEIVE_POKEMON} from '../actions/pokemon_actions';
 
-const PokemonDetailReducer = (state = {}, action) => {
+
+
+const PokemonDetailReducer = (state = {moves:[], items:[]}, action) => {
   let newState = {};
   Object.freeze(state);
   switch(action.type){

@@ -27,13 +27,171 @@
   right: 0;
   border: 2px solid orange;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: rgba(0, 0, 0, .9);
   color: white;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 550px;
+  border-radius: 10px;
 }
 
+.electric {
+  background: url(http://resources2.news.com.au/images/2014/01/21/1226806/565390-34df8caa-822a-11e3-9ce1-b10e1a59eb0c.jpg);
+}
+
+.fire {
+  background: url(http://weknowyourdreams.com/images/fire/fire-08.jpg)
+}
+
+.water {
+  background: url(http://watercharity.com/sites/default/files/Deep%20Blue.jpg)
+}
+
+.psychic {
+  background: url(http://orig08.deviantart.net/4e62/f/2015/060/7/a/untitled_drawing_by_powerofthemew-d8jzjji.png);
+  background-position: center;
+}
+
+.poison {
+  background: url(https://c1.staticflickr.com/5/4125/4995061191_669ec6b87a_z.jpg);
+}
+
+.fighting {
+  background: url(https://s-media-cache-ak0.pinimg.com/736x/be/12/46/be1246068577136663cb01eecb69b80e.jpg);
+  background-position: center;
+}
+
+.grass {
+  background: url(http://vignette2.wikia.nocookie.net/planttycoon/images/9/9d/GRASS.JPG/revision/latest?cb=20160417142616);
+}
+
+.flying {
+  background: url(https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwit05HdmvzPAhXKwVQKHXxnAKcQjRwIBw&url=http%3A%2F%2Fhitcolors.com%2Fsky-blue%2F&bvm=bv.136811127,d.cGw&psig=AFQjCNEw2KIu1iuvwr3x_18XrtV2_bx-XA&ust=1477699753490911);
+}
+
+.normal {
+  background: url(http://www.psdgraphics.com/wp-content/uploads/2009/09/blurry-lights.jpg);
+  background-position: center;
+}
+
+.rock {
+  background: url(http://aztecstoneempire.com/wp-content/uploads/2014/11/Rip-Rap-Rubble-3.jpg);
+}
+
+.ground {
+  background: url(https://tctechcrunch2011.files.wordpress.com/2016/01/earthquake-shutterstock.jpg?w=764&h=400&crop=1);
+}
+
+.ice {
+  background: url(http://www-tc.pbs.org/wgbh/nova/next/wp-content/uploads/2014/11/ice_1024x576.jpg);
+  background-position: center;
+}
+
+.bug {
+  background: url(http://www.nhptv.org/wild/images/monarchbutterflyusfwrickhansen.jpg);
+}
+
+.dragon {
+  background: url(https://s-media-cache-ak0.pinimg.com/originals/cf/03/cf/cf03cf4b9840570a8de600f06b43495f.jpg);
+  background-position: top;
+}
+
+.ghost {
+  background: url(http://loudwire.com/files/2015/09/Cemetery-630x420.jpg);
+}
+
+
+.background-overlay {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+
 .attribute {
+  display: flex;
+  padding-right: 50px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.poke-name {
+  font-size: 2em;
+}
+
+.not-items {
+  display:flex;
+}
+
+.poke-image {
+  padding-right: 40px;
+}
+
+.stats {
+  padding-top: 30px;
+  display: flex;
+}
+
+.non-moves {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.items {
+  padding-bottom: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.item-list {
+  justify-content: space-between;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+}
+
+.item {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  width:33.3333%;
+  align-items: center;
+}
+
+.item-label {
+  padding-bottom: 20px;
+}
+
+.item h3 {
+  font-size: 12px;
+}
+
+.item img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.items-and-detail {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.item-detail {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.exit {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
 }

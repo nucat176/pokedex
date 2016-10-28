@@ -2,6 +2,8 @@ export const RECEIVE_ALL_POKEMON = 'RECEIVE_ALL_POKEMON';
 export const REQUEST_ALL_POKEMON = 'REQUEST_ALL_POKEMON';
 export const RECEIVE_POKEMON = 'RECEIVE_POKEMON';
 export const REQUEST_POKEMON = 'REQUEST_POKEMON';
+export const CREATE_POKEMON = 'CREATE_POKEMON';
+export const RECEIVE_NEW_POKEMON = 'RECEIVE_NEW_POKEMON';
 
 export const receiveAllPokemon = (pokemon) => (
   {
@@ -29,3 +31,13 @@ export const requestPokemon = (id) => (
     id
   }
 );
+
+export const createPokemon = (pokeParams) => ({
+  type: CREATE_POKEMON,
+  pokeParams
+});
+
+export const receiveNewPokemon = (newPoke) => ({
+  type: RECEIVE_NEW_POKEMON,
+  newPoke
+});

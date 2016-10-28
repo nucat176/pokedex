@@ -8,6 +8,14 @@ class Api::PokemonController < ApplicationController
     @pokemon = Pokemon.find(params[:id])
   end
 
+  def create
+    @pokemon = Pokemon.new(poke_params)
+    if @pokemon.save!
+      render :create
+    else
+    end
+  end
+
   private
 
   def poke_params
